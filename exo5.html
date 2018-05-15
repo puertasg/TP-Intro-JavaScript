@@ -9,6 +9,20 @@
 	</body>
 	
 	<script>
-	
+		function moyenne(tab)
+		{
+			var sumNote = 0;
+			for(var note in tab)
+			{
+				sumNote += tab[note];
+			}
+			
+			var result = sumNote/tab.length;
+			return result.toFixed(2);
+		}
+		
+		var tabNotes = [15, 12, 18, 14, 16, 16, 19, 13, 11, 10, 16, 15];
+		
+		console.log(moyenne(tabNotes));
 	</script>
 </html>
