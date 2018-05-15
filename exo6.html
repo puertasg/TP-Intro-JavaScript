@@ -2,13 +2,33 @@
 <html>
 	<head>
 		<title>Intro JS</title>
+		<link rel="stylesheet" href="./css/style_exo6.css">
 	</head>
 	
 	<body>
-	
+		<button id="boutonRouge">Rouge</button>
+		<button id="boutonVert">Vert</button>
+		<button id="boutonBleu">Bleu</button>
+		
+		<div id="monDiv">
+			
+		</div>
 	</body>
 	
 	<script>
-	
+		buttonRed = document.getElementById("boutonRouge");
+		buttonRed.addEventListener('click', function(event) {
+			document.getElementById("monDiv").style.backgroundColor = "red";
+		});
+		
+		buttonGreen = document.getElementById("boutonVert");
+		buttonGreen.addEventListener('click', function(event) {
+			document.getElementById("monDiv").style.backgroundColor = "green";
+		});
+		
+		buttonBlue = document.getElementById("boutonBleu");
+		buttonBlue.addEventListener('click', function(event) {
+			document.getElementById("monDiv").style.backgroundColor = "blue";
+		});
 	</script>
 </html>
